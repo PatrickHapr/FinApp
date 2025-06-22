@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FinApp"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Cadastro"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#154d17"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnExtrato"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Extrato"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#0d2e8f"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Sair"
+        android:textSize="18sp"
+        android:backgroundTint="#bd2828"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

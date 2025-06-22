@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FinApp</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="extrato">Extrato</string>
+    <string name="sair">Sair</string>
+    <string name="credito">Crédito</string>
+    <string name="debito">Débito</string>
+    <string name="descricao">Descrição</string>
+    <string name="valor">Valor</string>
+    <string name="salvar">Salvar</string>
+    <string name="voltar">Voltar</string>
+    <string name="todas">Todas</string>
+    <string name="creditos">Créditos</string>
+    <string name="debitos">Débitos</string>
+    <string name="saldo">Saldo</string>
+</resources>

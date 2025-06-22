@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extrato Financeiro"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#2E8B57"
+        android:paddingBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnTodas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Todas"
+            android:textSize="12sp"
+            android:layout_marginRight="4dp"
+            android:backgroundTint="#0d2e8f" />
+
+        <Button
+            android:id="@+id/btnCreditos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Créditos"
+            android:textSize="12sp"
+            android:layout_marginRight="4dp"
+            android:backgroundTint="#154d17" />
+
+        <Button
+            android:id="@+id/btnDebitos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Débitos"
+            android:textSize="12sp"
+            android:backgroundTint="#bd2828" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSaldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saldo: R$ 0,00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:background="#E8F5E8"
+        android:layout_marginBottom="16dp" />
+
+    <ListView
+        android:id="@+id/lvTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhuma transação encontrada"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:padding="32dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnVoltarExtrato"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Voltar"
+        android:textSize="18sp"
+        android:backgroundTint="#757575"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
