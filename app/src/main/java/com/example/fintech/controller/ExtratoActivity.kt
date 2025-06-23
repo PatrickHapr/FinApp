@@ -104,13 +104,11 @@ class ExtratoActivity : AppCompatActivity() {
             tvType.text = transaction.type
 
             if (transaction.type == "CREDITO") {
-                ivType.setImageResource(android.R.drawable.arrow_up_float)
-                ivType.setColorFilter(android.graphics.Color.parseColor("#4CAF50"))
+                ivType.setImageResource(R.drawable.ic_credito)
                 tvValue.text = "+R$ ${"%.2f".format(transaction.value)}"
                 tvValue.setTextColor(android.graphics.Color.parseColor("#4CAF50"))
             } else {
-                ivType.setImageResource(android.R.drawable.arrow_down_float)
-                ivType.setColorFilter(android.graphics.Color.parseColor("#F44336"))
+                ivType.setImageResource(R.drawable.ic_debito)
                 tvValue.text = "-R$ ${"%.2f".format(transaction.value)}"
                 tvValue.setTextColor(android.graphics.Color.parseColor("#F44336"))
             }
