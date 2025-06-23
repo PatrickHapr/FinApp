@@ -2,42 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F5F5"
     android:orientation="vertical"
-    android:padding="24dp"
-    android:background="#F5F5F5">
+    android:padding="24dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:paddingBottom="32dp"
         android:text="Cadastro de Transação"
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="#2E8B57"
-        android:paddingBottom="32dp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="Tipo da Operação:"
         android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp" />
+        android:textStyle="bold" />
 
     <RadioGroup
         android:id="@+id/rgType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="24dp">
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/rbCredito"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Crédito"
             android:layout_marginRight="32dp"
-            android:checked="true" />
+            android:checked="true"
+            android:text="Crédito" />
 
         <RadioButton
             android:id="@+id/rbDebito"
@@ -50,55 +55,55 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="Descrição:"
         android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp" />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite a descrição da transação"
-        android:padding="12dp"
         android:layout_marginBottom="24dp"
-        android:background="@android:drawable/edit_text" />
+        android:background="@android:drawable/edit_text"
+        android:hint="Digite a descrição da transação"
+        android:padding="12dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="Valor:"
         android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp" />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@android:drawable/edit_text"
         android:hint="0.00"
         android:inputType="numberDecimal"
-        android:padding="12dp"
-        android:layout_marginBottom="32dp"
-        android:background="@android:drawable/edit_text" />
+        android:padding="12dp" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Salvar Transação"
-        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#154d17"
+        android:text="Salvar Transação"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="16dp" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btnVoltar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Voltar"
-        android:textSize="18sp"
         android:backgroundTint="#757575"
-        android:textColor="@android:color/white" />
+        android:text="Voltar"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
 </LinearLayout>
